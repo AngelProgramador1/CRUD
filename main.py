@@ -5,7 +5,7 @@ from database import  SessionLocal, engine
 
 app = FastAPI()
 
-models.Base.metadata.create_all(bing= engine)
+models.Base.metadata.create_all(bind= engine)
 def get_db():
     db = SessionLocal
     try:
