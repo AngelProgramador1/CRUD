@@ -30,4 +30,4 @@ def numero():
 
 @app.get("/")
 def get(db: int = Depends(numero)):
-    return {"el resultado es": 2} if db == 2 else "algo"
+    return {"el resultado es": 2} if db == 2 else "algo2"
